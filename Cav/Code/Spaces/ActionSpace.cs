@@ -5,8 +5,11 @@ using System.Web;
 
 namespace Cav.Code.Spaces
 {
+    public delegate void Action(Seat actor);
+
     public abstract class ActionSpace
     {
+
         public ResourceBank StoredResource;
         public List<Action> Actions;
 
