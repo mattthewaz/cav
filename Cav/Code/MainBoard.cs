@@ -14,5 +14,10 @@ namespace Cav.Code
         }
 
         public List<ActionSpace> Actions = new List<ActionSpace>();
+
+        public static List<ActionSpaceType> BoardA1 = new List<ActionSpaceType>()
+        {
+            ActionSpaceType.DriftMining1
+        };
     }
 }

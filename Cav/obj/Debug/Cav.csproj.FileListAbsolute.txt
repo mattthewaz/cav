@@ -3,3 +3,8 @@ c:\users\mattt_000\documents\visual studio 2012\Projects\Cav\Cav\bin\Cav.pdb
 c:\users\mattt_000\documents\visual studio 2012\Projects\Cav\Cav\obj\Debug\Cav.csprojResolveAssemblyReference.cache
 c:\users\mattt_000\documents\visual studio 2012\Projects\Cav\Cav\obj\Debug\Cav.dll
 c:\users\mattt_000\documents\visual studio 2012\Projects\Cav\Cav\obj\Debug\Cav.pdb
+C:\Projects\Cav\cav\Cav\obj\Debug\Cav.dll
+C:\Projects\Cav\cav\Cav\obj\Debug\Cav.pdb
+C:\Projects\Cav\cav\Cav\bin\Cav.dll
+C:\Projects\Cav\cav\Cav\bin\Cav.pdb
+C:\Projects\Cav\cav\Cav\obj\Debug\Cav.csprojResolveAssemblyReference.cache

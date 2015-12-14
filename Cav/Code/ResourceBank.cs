@@ -116,8 +116,16 @@ namespace Cav.Code
         {
             var newPiles = new Dictionary<ResourceType, int>();
 
-            newPiles[pile1.Type] = pile1.Amount;
-            newPiles[pile2.Type] = pile2.Amount;
+
+            if (pile1.Type == pile2.Type)
+            {
+                newPiles[pile1.Type] = pile1.Amount + pile2.Amount; 
+            }
+            else
+            {
+                newPiles[pile1.Type] = pile1.Amount;
+                newPiles[pile2.Type] = pile2.Amount;
+            }
 
             return new ResourceBank(newPiles);
         }

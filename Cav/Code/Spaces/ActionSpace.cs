@@ -5,18 +5,15 @@ using System.Web;
 
 namespace Cav.Code.Spaces
 {
-    public delegate void Action(Seat actor);
-
     public abstract class ActionSpace
     {
+        public ResourceBank StoredResource = new ResourceBank();
+        public ResourceBank InitialResources = new ResourceBank();
+        public ResourceBank AccumulatedResources = new ResourceBank();
 
-        public ResourceBank StoredResource;
-        public List<Action> Actions;
+        public List<GameActionType> Actions = new List<GameActionType>() { };
 
-        public ResourceBank InitialResources;
-        public ResourceBank AccumulatedResources;
-
-        public void Accumulate()
+        public virtual void Accumulate()
         {
             if (StoredResource.Resources.Count == 0)
             {
@@ -27,5 +24,17 @@ namespace Cav.Code.Spaces
                 StoredResource = StoredResource + InitialResources;
             }
         }
+
+        public static Dictionary<ActionSpaceType, ActionSpace> ActionSpaces = new Dictionary<ActionSpaceType, ActionSpace>() 
+        {            
+            {ActionSpaceType.DriftMining1,         new DriftMining1()},
+            {ActionSpaceType.DriftMining4,         new DriftMining4()},
+        };
+    }
+
+    public enum ActionSpaceType
+    {
+        DriftMining1,
+        DriftMining4
     }
 }

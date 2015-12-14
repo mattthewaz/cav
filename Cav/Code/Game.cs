@@ -5,15 +5,16 @@ using System.Web;
 
 namespace Cav.Code
 {
+
     public class Game
     {
         public Game(List<SeatName> gameSeats)
         {
             gameSeats.ForEach(seatName => Seats[seatName] = new Seat());
-            Board = new MainBoard(gameSeats.Count);
+            MainBoard = new MainBoard(gameSeats.Count);
         }
 
-        public MainBoard Board {get;set;}
+        public MainBoard MainBoard {get;set;}
         public Dictionary<SeatName, Seat> Seats = new Dictionary<SeatName, Seat>();
 
         public static Dictionary<ResourceType, Resource> Resources = new Dictionary<ResourceType, Resource>() 
