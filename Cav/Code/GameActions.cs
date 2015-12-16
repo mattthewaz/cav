@@ -9,17 +9,26 @@ namespace Cav.Code
 
     public enum GameActionType
     {
-        AddTunnelCavernTile
+        None,
+
+        AddTunnelCavernTile,
+        AddCavernCavernTile
     }
     
     public static class GameActions
     {
         public static Dictionary<GameActionType, GameAction> ActionMap = new Dictionary<GameActionType, GameAction>()
         {
-            {GameActionType.AddTunnelCavernTile, PromptTunnelCavernTile}
+            {GameActionType.AddTunnelCavernTile, PromptTunnelCavernTile},            
+            {GameActionType.AddCavernCavernTile, PromptCavernCavernTile}
         };
 
         public static void PromptTunnelCavernTile(Game game, SeatName actor)
+        {
+
+        }
+
+        public static void PromptCavernCavernTile(Game game, SeatName actor)
         {
 
         }

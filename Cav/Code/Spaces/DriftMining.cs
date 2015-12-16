@@ -7,9 +7,10 @@ namespace Cav.Code.Spaces
 {
     public class DriftMining : ActionSpace
     {
-        public new List<GameActionType> Actions = new List<GameActionType>()
+        public new ActionList Actions = new ActionList()
         {
-            GameActionType.AddTunnelCavernTile
+            Actions = new List<ActionListItem>() { new ActionListItem() { Action = GameActionType.AddTunnelCavernTile } },
+            Type = ActionListType.AndOr
         };
     }
 

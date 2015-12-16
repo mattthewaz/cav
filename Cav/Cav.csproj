@@ -62,9 +62,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\ActionList.cs" />
     <Compile Include="Code\GameActions.cs" />
     <Compile Include="Code\Scoreable.cs" />
     <Compile Include="Code\Spaces\ActionSpace.cs" />
+    <Compile Include="Code\Spaces\Excavation.cs" />
     <Compile Include="Code\Spaces\DriftMining.cs" />
     <Compile Include="Code\MainBoard.cs" />
     <Compile Include="Code\Game.cs" />
